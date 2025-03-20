@@ -21,7 +21,13 @@ body {
   background-repeat: no-repeat;
   width: 100vw;
   height: 144vh;
-  overflow-x: hidden;
+  overflow: hidden;
+}
+
+.container {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
 }
 
 .container::after {
@@ -91,7 +97,7 @@ body {
 
 @keyframes slide-top-right {
   0% {
-    transform: translateY(80vh);
+    transform: translateY(50vh);
   }
   100% {
     transform: translateY(-20vh) translateX(250vw);
@@ -143,7 +149,7 @@ body {
   }
   100% {
     opacity: 1;
-    transform: translateY(60vh);
+    transform: translateY(50vh);
   }
 }
 
@@ -156,7 +162,7 @@ body {
 
 @media (max-width: 768px) {
   body {
-    background-size: 130% 100%;
+    background-size: 120% 100%;
   }
 
   .container header::before {
