@@ -1,6 +1,12 @@
 window.addEventListener("load", () => {
-  setTimeout(() => {
-    window.scrollTo({ top: window.innerHeight / 2, behavior: "smooth" });
-    document.querySelector("body").style.overflow = "hidden";
-  }, 300);
+  let count = 250,
+    animateBackground = () => {
+      if (count <= 100) return;
+
+      count -= 1;
+      document.querySelector("body").style.backgroundSize = `100vw ${count}svh`;
+      requestAnimationFrame(animateBackground);
+    };
+
+  setTimeout(() => requestAnimationFrame(animateBackground), 1000);
 });
