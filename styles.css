@@ -123,13 +123,13 @@ body {
   width: 400px;
   height: 400px;
   object-fit: cover;
-  animation: slide-top-right1 5s linear both;
+  animation: slide-top-right1 3s linear both;
   animation-delay: 2s;
 }
 
 @keyframes slide-top-right1 {
   0% {
-    transform: translateY(50svh) translateX(0) rotate(60deg);
+    transform: translateY(50svh) translateX(-100vw) rotate(60deg);
   }
   100% {
     transform: translateY(-20svh) translateX(250vw) rotate(0deg);
