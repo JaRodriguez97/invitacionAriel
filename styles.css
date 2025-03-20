@@ -43,18 +43,18 @@ body {
   height: 300px;
   object-fit: cover;
   z-index: 2;
-  animation: slide-bottom 1s linear both;
-  animation-delay: 1s;
+  animation: slide-right 1s linear both;
+  animation-delay: 1.5s;
 }
 
-@keyframes slide-bottom {
+@keyframes slide-right {
   0% {
     opacity: 0;
-    transform: translateY(-10svh);
+    transform: translateX(-10vw);
   }
   100% {
     opacity: 1;
-    transform: translateY(5svh);
+    transform: translateX(5vw);
   }
 }
 
@@ -247,6 +247,36 @@ footer img:nth-child(5) {
       opacity: 1;
       transform: translateY(30svh);
     }
+  }
+
+  main {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 90%;
+    height: fit-content;
+  }
+
+  main h2 {
+    font-size: 3em;
+    text-align: center;
+    text-wrap: pretty;
+  }
+
+  main img {
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    animation: slide-top 1s linear both;
+    animation-delay: 4s;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
   }
 
   footer {
