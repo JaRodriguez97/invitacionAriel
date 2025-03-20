@@ -20,7 +20,7 @@ body {
   background-position: bottom;
   background-repeat: no-repeat;
   width: 100vw;
-  height: 144vh;
+  height: 144svh;
   overflow: hidden;
 }
 
@@ -38,7 +38,7 @@ body {
   background-repeat: no-repeat;
   position: absolute;
   top: 0;
-  left: 0;
+  left: -50px;
   width: 300px;
   height: 300px;
   object-fit: cover;
@@ -51,7 +51,7 @@ body {
     transform: translateY(0);
   }
   100% {
-    transform: translateY(45vh);
+    transform: translateY(45svh);
   }
 }
 
@@ -75,7 +75,7 @@ body {
     transform: translateY(0);
   }
   100% {
-    transform: translateY(40vh) rotate(290deg);
+    transform: translateY(40svh) rotate(290deg);
   }
 }
 
@@ -97,10 +97,10 @@ body {
 
 @keyframes slide-top-right {
   0% {
-    transform: translateY(50vh);
+    transform: translateY(50svh);
   }
   100% {
-    transform: translateY(-20vh) translateX(250vw);
+    transform: translateY(-20svh) translateX(250vw);
   }
 }
 
@@ -122,10 +122,10 @@ body {
 
 @keyframes slide-top-right1 {
   0% {
-    transform: translateY(50vh);
+    transform: translateY(50svh);
   }
   100% {
-    transform: translateY(-20vh) translateX(250vw);
+    transform: translateY(-20svh) translateX(250vw);
   }
 }
 
@@ -144,12 +144,12 @@ body {
 
 @keyframes slide-top {
   0% {
-    transform: translateY(90vh);
+    transform: translateY(90svh);
     opacity: 0;
   }
   100% {
     opacity: 1;
-    transform: translateY(50vh);
+    transform: translateY(50svh);
   }
 }
 
