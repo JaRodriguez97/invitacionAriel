@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Emilys+Candy&family=Lobster&display=swap");
 
 * {
   margin: 0;
@@ -169,6 +170,14 @@ body {
   }
 }
 
+footer img {
+  width: 200px;
+  height: 100%;
+  object-fit: fill;
+  margin-inline: -60px;
+  filter: drop-shadow(0 5px 5px black);
+}
+
 footer img:nth-child(2) {
   z-index: 3;
 }
@@ -267,6 +276,24 @@ footer img:nth-child(5) {
     text-wrap: pretty;
     animation: blur 1s linear both;
     animation-delay: 5s;
+    display: flex;
+    flex-direction: column;
+    margin-top: -70px;
+  }
+
+  main h2 span {
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-shadow: -3px -3px 0 #bd269a, 3px -3px 0 #bd269a, -3px 3px 0 #bd269a,
+      3px 3px 0 #bd269a;
+  }
+
+  main h2 strong {
+    font-size: 1.5em;
+    text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+    color: #bd269a;
+    font-weight: bold;
   }
 
   @keyframes blur {
@@ -289,6 +316,28 @@ footer img:nth-child(5) {
     right: 0;
     top: 0;
     bottom: 0;
+  }
+
+  main img.sebastian {
+    width: 150px;
+    height: 150px;
+    left: 80vw;
+    bottom: 35svh;
+    top: auto;
+    animation: slide-left-rotate 1s linear both;
+    animation-delay: 4s;
+    z-index: 5;
+  }
+
+  @keyframes slide-left-rotate {
+    0% {
+      opacity: 0;
+      transform: translateX(0) translateY(0) rotate(0deg);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(-80vw) translateY(80svh) rotate(360deg);
+    }
   }
 
   footer {
@@ -314,11 +363,11 @@ footer img:nth-child(5) {
   }
 
   footer img {
-    width: 200px;
+    /* width: 200px;
     height: 100%;
     object-fit: fill;
     margin-inline: -60px;
-    filter: drop-shadow(0 5px 5px black);
+    filter: drop-shadow(0 5px 5px black); */
   }
 }
 
