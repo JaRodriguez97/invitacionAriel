@@ -1,5 +1,5 @@
 window.addEventListener("load", () => {
-  let count = 250,
+  let count = 150,
     animateBackground = () => {
       if (count <= 100) return;
 
@@ -8,5 +8,5 @@ window.addEventListener("load", () => {
       requestAnimationFrame(animateBackground);
     };
 
-  setTimeout(() => requestAnimationFrame(animateBackground), 1000);
+  // setTimeout(() => requestAnimationFrame(animateBackground), 1000);
 });
