@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 400;
+  color: #fff;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Emilys Candy", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  background-color: #01befe;
+  background-image: url(./img/fondo/fondo-mar-videoconferencia_52683-46343.webp);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 144vh;
+  overflow-x: hidden;
+}
+
+.container::after {
+  content: "";
+  background-image: url(./img/caballitos/caballo1.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  z-index: 2;
+  animation: slide-bottom 1s linear both;
+}
+
+@keyframes slide-bottom {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(45vh);
+  }
+}
+
+.container::before {
+  content: "";
+  background-image: url(./img/Flounder/flounder.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  right: -60px;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  animation: slide-bottom-rotate 1s linear both;
+}
+
+@keyframes slide-bottom-rotate {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(40vh) rotate(290deg);
+  }
+}
+
+.container header::after {
+  content: "";
+  background-image: url(./img/tortugas/tortuga1.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 0px;
+  left: -50vw;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  animation: slide-top-right 5s linear both;
+  animation-delay: 2s;
+}
+
+@keyframes slide-top-right {
+  0% {
+    transform: translateY(80vh);
+  }
+  100% {
+    transform: translateY(-20vh) translateX(250vw);
+  }
+}
+
+.container header::before {
+  content: "";
+  background-image: url(./img/ariel/ariel1.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 0;
+  left: -50vw;
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  animation: slide-top-right1 5s linear both;
+  animation-delay: 2s;
+}
+
+@keyframes slide-top-right1 {
+  0% {
+    transform: translateY(50vh);
+  }
+  100% {
+    transform: translateY(-20vh) translateX(250vw);
+  }
+}
+
+.container header h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin: 0 auto;
+  text-wrap: pretty;
+  width: 50%;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  animation: slide-top 1s linear both;
+  z-index: 3;
+  position: relative;
+  animation-delay: 1s;
+}
+
+@keyframes slide-top {
+  0% {
+    transform: translateY(90vh);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(60vh);
+  }
+}
+
+@media (max-width: 500px) {
+  .container header h1 {
+    text-align: center;
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    background-size: 130% 100%;
+  }
+
+  .container header::before {
+    bottom: 80px;
+    left: -100vw;
+  }
+
+  .container header::after,
+  .container::before,
+  .container::after {
+    width: 200px;
+    height: 200px;
+  }
+}
