@@ -149,6 +149,15 @@ body {
   animation-delay: 1s;
 }
 
+@keyframes slide-bottom {
+  0% {
+    transform: translateY(-30svh);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 @keyframes slide-top {
   0% {
     transform: translateY(90svh);
@@ -229,15 +238,6 @@ footer img:nth-child(5) {
     height: 200px;
   }
 
-  @keyframes slide-bottom-rotate {
-    0% {
-      transform: translateY(0);
-    }
-    100% {
-      transform: translateY(30svh) rotate(290deg);
-    }
-  }
-
   @keyframes slide-top {
     0% {
       transform: translateY(50svh);
@@ -263,7 +263,19 @@ footer img:nth-child(5) {
   main h2 {
     font-size: 3em;
     text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     text-wrap: pretty;
+    animation: blur 1s linear both;
+    animation-delay: 5s;
+  }
+
+  @keyframes blur {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
 
   main img {
