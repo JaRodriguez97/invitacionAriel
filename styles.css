@@ -361,14 +361,6 @@ footer img:nth-child(5) {
       bottom: -15px;
     }
   }
-
-  footer img {
-    /* width: 200px;
-    height: 100%;
-    object-fit: fill;
-    margin-inline: -60px;
-    filter: drop-shadow(0 5px 5px black); */
-  }
 }
 
 @media (max-width: 500px) {
